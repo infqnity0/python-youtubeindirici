@@ -45,6 +45,7 @@ Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
 
 Sorularınız veya destek talepleriniz için Discord adresiyle iletişime geçebilirsiniz.
 Discord
+
      ```bash
      .kelle
      ```
