@@ -1,55 +1,50 @@
-## YouTube Video İndirici
+## Python YouTube İndirici
 
-Bu proje, Python ve Flask kullanarak basit bir YouTube video indirici uygulamasıdır. Kullanıcıların YouTube videolarını MP4 veya MP3 formatlarında indirmelerine olanak tanır. Ayrıca, MP4 formatı için çözünürlük ve FPS değerlerini seçme imkanı sağlar.
+Bu proje, Python kullanarak YouTube videolarını indirmenize olanak sağlayan bir masaüstü uygulamasıdır. Uygulama, kullanıcıların videoları MP4 veya MP3 formatında indirmelerini sağlar ve MP4 formatında video çözünürlüklerini seçmelerine olanak tanır.
 
 ### Özellikler
 
-- **Video İndirme**: YouTube videolarını MP4 (video) veya MP3 (ses) formatlarında indirin.
-- **Çözünürlük ve FPS Seçimi**: MP4 formatı için çeşitli çözünürlük ve FPS seçeneklerini görüntüleyin ve seçin.
-- **İndirme İlerlemesi**: İndirmenin ilerlemesini gerçek zamanlı olarak takip edin.
-- **Basit Kullanıcı Arayüzü**: Flask ve HTML kullanılarak oluşturulmuş kullanıcı dostu bir arayüz.
-
-### Kurulum
-
-1. **Depoyu Klonlayın**:
-
-   ```bash
-   git clone https://github.com/kullanici_adiniz/yt-downloader.git
-   cd yt-downloader
-   ```
-
-2. **Gerekli Paketleri Yükleyin**:
-
-   Sanal bir ortam oluşturun ve gerekli Python paketlerini yükleyin.
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Windows kullanıcıları için: venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
-
-3. **Uygulamayı Çalıştırın**:
-
-   Flask uygulamasını başlatın.
-
-   ```bash
-   python app.py
-   ```
-
-   Ardından tarayıcınızda `http://127.0.0.1:5000` adresine giderek uygulamayı kullanabilirsiniz.
+- **Video İndirme**: YouTube videolarını MP4 (video) ve MP3 (ses) formatlarında indirir.
+- **Çözünürlük Seçimi**: MP4 formatı için çeşitli çözünürlükler arasından seçim yapma imkanı sunar.
+- **İndirme İlerlemesi**: İndirme süreci hakkında kullanıcıya bilgi verir, ilerleme çubuğu ve hız bilgileri sağlar.
+- **Tkinter GUI**: Basit ve kullanıcı dostu bir grafik arayüz ile video indirme işlemlerini kolaylaştırır.
 
 ### Kullanım
 
-- Uygulama açıldığında YouTube video URL'sini girin.
-- İndirme formatını (MP4 veya MP3) seçin.
-- MP4 formatı için uygun çözünürlük ve FPS seçeneklerini belirleyin.
-- "İndir" düğmesine tıklayarak videoyu indirmeye başlayın.
-- İndirme ilerlemesini takip edin ve tamamlandığında dosyayı indirin.
+1. **Kurulum**:
+   - Python ve gerekli paketlerin kurulu olduğundan emin olun. Gerekli paketler genellikle `yt_dlp` ve `tkinter`'ı içerir.
+   - Paketleri yüklemek için terminalde şu komutu çalıştırabilirsiniz:
+     ```bash
+     pip install yt-dlp
+     ```
+
+2. **Çalıştırma**:
+   - Uygulamayı çalıştırmak için terminalde projeye ait dosya dizinine gidin ve şu komutu çalıştırın:
+     ```bash
+     python app.py
+     ```
+
+3. **Kullanım**:
+   - Uygulama açıldığında, YouTube video linkini girin.
+   - İndirme formatını seçin (MP4 veya MP3).
+   - MP4 formatı seçilmişse, mevcut çözünürlükler listelenir ve bir çözünürlük seçilmelidir.
+   - İndirme işlemini başlatmak için "İndir" butonuna tıklayın.
 
 ### Katkıda Bulunma
 
-Katkıda bulunmak isterseniz, lütfen bir pull request gönderin veya mevcut sorunları rapor edin. Herhangi bir öneri veya hata raporu için [issues](https://github.com/kullanici_adiniz/yt-downloader/issues) sayfasını kullanabilirsiniz.
+Katkıda bulunmak isteyenler için:
+- Bu proje açık kaynaklıdır ve katkılara açıktır.
+- Lütfen `issues` kısmına hata bildirin veya `pull requests` ile katkıda bulunun.
+- Kod standartlarına ve proje yönergelerine uygun katkılarınız memnuniyetle karşılanacaktır.
 
 ### Lisans
 
-Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
+Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
+
+### İletişim
+
+Sorularınız veya destek talepleriniz için Discord adresiyle iletişime geçebilirsiniz.
+Discord
+     ```bash
+     .kelle
+     ```
